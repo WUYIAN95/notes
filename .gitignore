@@ -1,0 +1,5 @@
+node_modules/
+.elog.env
+elog.cache.json
+elog.games.cache.json
+elog.software.cache.json

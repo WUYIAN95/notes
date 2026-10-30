@@ -1,0 +1,26 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync": "powershell -NoProfile -ExecutionPolicy Bypass -File ./sync-notes.ps1",
+    "sync:games": "node ./node_modules/@elog/cli/bin/elog.js sync -c elog.games.config.js -e .elog.env --force",
+    "sync:software": "node ./node_modules/@elog/cli/bin/elog.js sync -c elog.software.config.js -e .elog.env --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WUYIAN95/notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/WUYIAN95/notes/issues"
+  },
+  "homepage": "https://github.com/WUYIAN95/notes#readme",
+  "devDependencies": {
+    "@elog/cli": "^0.14.7"
+  }
+}
