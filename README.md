@@ -11,6 +11,8 @@ This repository is synchronized from two private Yuque knowledge bases with Elog
 2. Run `npm ci`.
 3. Run `npm run sync`.
 
+The two books use separate incremental caches. Deleted source notes are not removed automatically from the repository.
+
 `.elog.env` is ignored and is never committed.
 
 ## GitHub Actions

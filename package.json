@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sync": "powershell -NoProfile -ExecutionPolicy Bypass -File ./sync-notes.ps1",
-    "sync:games": "node ./node_modules/@elog/cli/bin/elog.js sync -c elog.games.config.js -e .elog.env --force",
-    "sync:software": "node ./node_modules/@elog/cli/bin/elog.js sync -c elog.software.config.js -e .elog.env --force"
+    "sync:games": "node ./elog-sync.js elog.games.config.js",
+    "sync:software": "node ./elog-sync.js elog.software.config.js"
   },
   "repository": {
     "type": "git",

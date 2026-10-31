@@ -14,9 +14,9 @@ if (-not $env:YUQUE_TOKEN) {
   throw 'YUQUE_TOKEN is not set. Copy .elog.env.example to .elog.env and add your Yuque token.'
 }
 
-node ./node_modules/@elog/cli/bin/elog.js sync -c elog.games.config.js -e .elog.env --force
+node ./elog-sync.js elog.games.config.js
 Start-Sleep -Seconds 5
-node ./node_modules/@elog/cli/bin/elog.js sync -c elog.software.config.js -e .elog.env --force
+node ./elog-sync.js elog.software.config.js
 
 if ((git status --porcelain)) {
   git add games software package.json package-lock.json elog.games.config.js elog.software.config.js sync-notes.ps1 .elog.env.example .gitignore
